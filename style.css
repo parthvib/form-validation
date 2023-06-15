@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    /* padding: auto; */
+    /* align-self: center; */
+    border: 5px solid rgba(243, 188, 124,0.2);
+    display:flex;
+    width: 35%;
+    height: 50%;
+    flex-direction:column;
+    gap: 3rem;
+    padding: 2rem;
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+    background-color: bisque;
+    border-radius: 5px;
+
+
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid blue; */
+
+    gap: 1rem;
+    padding-top: 1rem;
+    padding: auto;
+    height: 20rem;
+    width: 25rem;
+    margin: auto;
+    margin-top: -10px;
+   
+    
+}
+.boxes{
+    width: 70%;
+    width: 20rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid black;
+    /* font-weight: bold;x */
+}
+
+.btn{
+    height: 2rem;
+    width: 7rem;
+    display: block;
+    margin: auto;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+h1{
+    /* border: 2px solid pink; */
+    width: 15rem;
+    display: block;
+    margin:auto;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: larger;
+
+}
+.error{
+    height:2rem;
+    width:20rem;
+    /* border: 2px solid yellow; */
+    padding: 0;
+    display: block;
+    margin: auto;
+    margin-top: -10px;
+    /* visibility: hidden; */
+}
+.headings{
+    height:2rem;
+    width:20rem;
+    /* border: 2px solid rgb(255, 123, 0); */
+    padding: 0;
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: -15px;
+    font-size: larger;
+
+}
+.btn{
+    background-color: rgb(247, 195, 117);
+    border-radius: 5px;
+    font-size: large;
+    border-color: rgb(255, 148, 17);
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(250, 197, 127);
+}
+
+.one{
+    border:1px solid rgb(245, 189, 70);
+}
+.otp{
+    height: 7rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    display: block;
+    margin: auto;
+    /* border: 2px solid red; */
+    /* padding: 0.5rem; */
+    /* padding-left: 1rem; */
+    justify-content:center;
+    /* align-items: center; */
+    visibility: hidden;
+    padding-left: 2.5rem;
+
+}
+.otpV{
+    height: 2rem;
+    width: 2rem;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+
+   
+    /* display:inline-block; */
+
+}
+.instructions{
+    font-size: 1rem;
+    
+}
+
+.otpH{
+    visibility: visible;
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.height{
+
+}
+
+
