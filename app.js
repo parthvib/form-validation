@@ -19,7 +19,7 @@ form.addEventListener('submit',function(e){
     // document.classList.remove('otp');
 e.preventDefault();
 validatePhoneNumber();
-document.remove('.otp');
+// document.remove('.otp');
 
 
 });
@@ -34,15 +34,15 @@ function validatePhoneNumber(){
         }
     if(value.length==10){
         instruct.textContent="enter one-time-password";
-        document.add('.otp');
+        // document.add('.otp');
         otp.style.display.visible;
         otp.classList.add("otpH");
         checkOtp();
          }
 
-         if(value.length<10 || value==""){
-             otp.classList.remove("otpH");
-         }
+        //  if(value.length<10 || value==""){
+        //     //  otp.classList.remove("otpH");
+        //  }
     // if(value.length===10){
     //     errorElement.textContent="";
     // }
