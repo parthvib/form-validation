@@ -53,7 +53,7 @@ function checkOtp(){
     input[0].focus();
 for(let i=0;i<3;i++){
     input[i].addEventListener("keyup",function(){
-        if(input[i].value.length<2 && input[i].value==="3" ||input[i].value==="5"||input[i].value==="6"||input[i].value==="8" ){
+        if(input[i].value.length<2 && input[0].value==="3" ||input[1].value==="5"||input[2].value==="6"||input[3].value==="8" ){
             if(input[i].value.length>1){
                 input[i].value=" ";
             }
