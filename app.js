@@ -15,11 +15,11 @@ const input=[digit1,digit2,digit3,digit4];
 console.log(input);
 
 
+otp.style.display="none";
 form.addEventListener('submit',function(e){
     // document.classList.remove('otp');
 e.preventDefault();
 validatePhoneNumber();
-// document.remove('.otp');
 
 
 });
@@ -35,8 +35,10 @@ function validatePhoneNumber(){
     if(value.length==10){
         instruct.textContent="enter one-time-password";
         // document.add('.otp');
-        otp.style.display.visible;
-        otp.classList.add("otpH");
+        // otp.style.display.visible;
+        // otp.classList.add("otpH");
+otp.style.display="block";
+
         checkOtp();
          }
 
@@ -48,18 +50,34 @@ function validatePhoneNumber(){
     // }
     
 }
-
+// || input[1].value==="5" || input[2].value==="8" || input[3].value==="2" 
 function checkOtp(){
     input[0].focus();
 for(let i=0;i<3;i++){
     input[i].addEventListener("keyup",function(){
-        if(input[i].value.length<2 && input[0].value==="3" ||input[1].value==="5"||input[2].value==="6"||input[3].value==="8" ){
+        if(input[i].value.length<2 && input[0].value==="3" ){
+            input[1].removeAttribute("disabled");
+            input[1].focus();
+            if(input[1].value==="5"){
+                input[2].removeAttribute("disabled");
+                input[2].focus();
+
+                if(input[2].value==="8"){
+                    input[3].removeAttribute("disabled");
+                    input[3].focus();
+
+                    
+                }
+
+            }
+
             if(input[i].value.length>1){
                 input[i].value=" ";
             }
-            console.log("hii");
-            input[i+1].removeAttribute("disabled");
-            input[i+1].focus();
+
+            // console.log("hii");
+            // input[i+1].removeAttribute("disabled");
+            // input[i+1].focus();
             
 
         }
